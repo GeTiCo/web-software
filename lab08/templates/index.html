@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>lab08</title>
+	</head>
+	<body>
+		{% block content %}
+		<h1>Original page</h1>
+		<img style="width: 20px; height:20px;" src="{{ url_for('static', filename='img1.png')}}">
+		original content<hr>
+		{% endblock %}
+		<a href="{{ url_for('index')}}">go to original</a>
+		<a href="{{ url_for('page2')}}">go to another2</a>
+		<a href="{{ url_for('page3')}}">go to another3</a>
+	</body>
+</html>

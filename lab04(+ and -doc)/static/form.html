@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>g12_Fedorenko_lab04</title>
+</head>
+<body>
+    <h1>Checkbox</h1>
+    <table>
+        <tr>
+            <td>
+                Method GET
+                <form action="/checkbox" method="get">
+                    <input type="checkbox" name="checkbox_get_red">RED<br>
+                    <input type="checkbox" name="checkbox_get_green">GREEN<br>
+                    <input type="checkbox" name="checkbox_get_blue">BLUE<br>
+                    <input type="reset" value="Clear" name="reset">
+                    <input type="submit" value="Send" name="submit">
+                </form>
+            </td>
+            <td>
+                Method POST
+                <form action="/checkbox" method="post">
+                    <input type="checkbox" name="checkbox_post_red">RED<br>
+                    <input type="checkbox" name="checkbox_post_green">GREEN<br>
+                    <input type="checkbox" name="checkbox_post_blue">BLUE<br>
+                    <input type="reset" value="Clear" name="reset">
+                    <input type="submit" value="Send" name="submit">
+                </form>
+            </td>
+        </tr>
+    </table>
+    <hr><h1>Radiobutton</h1>
+    <table>
+        <tr>
+            <td>
+                Method GET
+                <form action="/radiobutton" method="get">
+                    First color <br>
+                    <input type="radio" name="radio_get_first" value="RED">RED<br>
+                    <input type="radio" name="radio_get_first" value="GREEN">GREEN<br>
+                    <input type="radio" name="radio_get_first" value="BLUE">BLUE<br>
+                    Second color <br>
+                    <input type="radio" name="radio_get_second" value="RED">RED<br>
+                    <input type="radio" name="radio_get_second" value="GREEN">GREEN<br>
+                    <input type="radio" name="radio_get_second" value="BLUE">BLUE<br>
+
+                    <input type="reset" value="Clear" name="reset">
+                    <input type="submit" value="Send" name="submit">
+                </form>
+            </td>
+            <td>
+                Method POST
+                <form action="/radiobutton" method="post">
+                    First color <br>
+                    <input type="radio" name="radio_post_first" value="RED">RED<br>
+                    <input type="radio" name="radio_post_first" value="GREEN">GREEN<br>
+                    <input type="radio" name="radio_post_first" value="BLUE">BLUE<br>
+                    Second color <br>
+                    <input type="radio" name="radio_post_second" value="RED">RED<br>
+                    <input type="radio" name="radio_post_second" value="GREEN">GREEN<br>
+                    <input type="radio" name="radio_post_second" value="BLUE">BLUE<br>
+                    <input type="reset" value="Clear" name="reset">
+                    <input type="submit" value="Send" name="submit">
+                </form>
+            </td>
+        </tr>
+    </table>
+    <hr><h1>List</h1>
+    <table>
+        <tr>
+            <td>
+                Method GET
+                <form action="/list" method="get">
+                    First color <br>
+                    <select name="list1_get">
+                        <option value="-">-</option>
+                        <option value="RED">RED</option>
+                        <option value="GREEN">GREEN</option>
+                        <option value="BLUE">BLUE</option>
+                    </select>
+                    <br>
+                    Second color <br>
+                    <select name="list2_get">
+                        <option value="-">-</option>
+                        <option value="RED">RED</option>
+                        <option value="GREEN">GREEN</option>
+                        <option value="BLUE">BLUE</option>
+                    </select>
+                    <br>
+                    <input type="reset" value="Clear" name="reset">
+                    <input type="submit" value="Send" name="submit">
+                </form>
+            </td>
+            <td>
+                Method POST
+                <form action="/list" method="post">
+                    First color <br>
+                    <select name="list1_post">
+                        <option value="-">-</option>
+                        <option value="RED">RED</option>
+                        <option value="GREEN">GREEN</option>
+                        <option value="BLUE">BLUE</option>
+                    </select>
+                    <br>
+                    Second color <br>
+                    <select name="list2_post">
+                        <option value="-">-</option>
+                        <option value="RED">RED</option>
+                        <option value="GREEN">GREEN</option>
+                        <option value="BLUE">BLUE</option>
+                    </select>
+                    <br>
+                    <input type="reset" value="Clear" name="reset">
+                    <input type="submit" value="Send" name="submit">
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

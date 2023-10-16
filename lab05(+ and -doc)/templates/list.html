@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>g12_Fedorenko_lab05</title>
+</head>
+<body>
+    <h1>To do list</h1> <hr>
+    Add element
+    <form action="/list" method="get">
+        <input type="text" name="new_task">
+        <select name="chose_color">
+            <option value="red">RED</option>
+            <option value="green">GREEN</option>
+            <option value="blue">BLUE</option>
+        </select>
+        <input type="submit" value="Добавить">
+    </form>
+    Delete element
+    <form action="/list" method="get">
+        <input type="text" name="delete">
+        <input type="submit" value="Удалить">
+    </form>
+    <hr>
+    <ol>
+        {% for i in range(len) %}
+        <li><font color="{{chose_color[i]}}">{{elements[i]}}</font> <a href="/list?delete={{i+1}}">Delete</a> </li>
+        {% endfor %}
+    </ol>
+</body>
+</html>

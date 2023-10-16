@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>g12_fedorenko lab03</title>
+	</head>
+	<body>
+		<h1>form with GET method</h1>
+		<form method='get' action="/hello">
+			please enter your name here: <input type="text" name="param_get">
+			<input type="submit" value="say hello">
+		</form>
+		<hr>
+		<h1>form with POST method</h1>
+		<form method='post' action="/hello">
+			please enter your name here: <input type="text" name="param_post">
+			<input type="submit" value="say hello">
+		</form>
+		<hr>
+		<h1>simple calculator</h1>
+		<form id = 'calcform' method="get" action="/calc">
+			<p>a:<input type="text" name="paramA"></p>
+			<p>b:<input type="text" name="paramB"></p>
+			<input type="submit" name="add" value="add">
+			<input type="submit" name="subtruct" value="subtruct">
+			<input type="submit" name="multiply"  value="multiply">
+			<input type="submit" name="divide" value="divide">
+		</form>
+	</body>
+</html>
